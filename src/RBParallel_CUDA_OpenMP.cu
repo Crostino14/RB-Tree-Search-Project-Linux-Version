@@ -291,7 +291,7 @@ int main(int argc, char **argv)
     int minGridSize; // The minimum grid size required to achieve maximum occupancy on the GPU
     int gridSize;    // The actual grid size calculated based on the input size and block size
 
-    cudaOccupancyMaxPotentialBlockSize(&minGridSize, &blockSize, searchSubtreeKernel, 0, 0);
+    cudaOccupancyMaxPotentialBlockSize(&minGridSize, &blockSize, balancedSearchSubtreeKernel, 0, 0);
 
     // Rounding up the grid size according to the array size and total blocks
     gridSize = (numValues + blockSize - 1) / blockSize;
@@ -421,7 +421,7 @@ int main(int argc, char **argv)
 
     // Timing the kernel execution using CUDA events
     cudaEventRecord(startEvent);
-    searchSubtreeKernel<<<gridSize, blockSize, dynamicSharedMemSize>>>(d_rbMatrixNodes, subtreeRoots, subtreeSizes, numBlocks, searchValue, d_foundIndex);
+    balancedSearchSubtreeKernel<<<gridSize, blockSize, dynamicSharedMemSize>>>(d_rbMatrixNodes, subtreeRoots, subtreeSizes, numBlocks, searchValue, d_foundIndex);
     cudaEventRecord(stopEvent);
     
     cudaDeviceSynchronize();
