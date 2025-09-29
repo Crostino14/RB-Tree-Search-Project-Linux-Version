@@ -10,7 +10,7 @@
 
 *Parallelized Red-Black Tree search with MPI, OpenMP, and CUDA - Performance analysis on various hardware configurations*
 
-[📖 Documentation](#-full-report) • [🛠️ Makefile Commands](#-makefile-commands) • [📊 Performance](#-performance-analysis) • [🔧 Installation](#️-installation)
+[📖 Full Report](#-full-report) • [🛠️ Makefile Commands](#-makefile-commands) • [📊 Performance](#-performance-analysis)
 
 </div>
 
