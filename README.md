@@ -139,6 +139,7 @@ make performance
 ```
 
 Each command should be run in the terminal from the **root directory** of the project.
+
 ---
 
 ## 📖 Full Report
