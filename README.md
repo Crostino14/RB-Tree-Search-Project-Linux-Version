@@ -148,7 +148,6 @@ For detailed **performance results** and **analysis**, see the full **[Project R
 
 ## 🔗 Related Resources
 
-### Documentation
 - [OpenMP Official Documentation](https://www.openmp.org/specifications/)
 - [MPI Forum Standards](https://www.mpi-forum.org/)
 - [NVIDIA CUDA Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
